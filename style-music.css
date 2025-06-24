@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/musicbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+#nav1{
+    width: 100%;
+    height: 50px;
+    background-color: #e89bcf;
+    color: rgb(137, 151, 202);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+#nav1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+#nav1 a{
+    padding:20px;
+    text-decoration: none;
+    color: #43508a;
+    text-align: center;
+    box-sizing: border-box;
+}
+#nav1 a:hover{
+   background-color: #ffe2fa; 
+}
+
+.shell{
+    width: 90%;
+    height: 700px;
+    display: flex;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+.box>img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+.box>span{
+    font: 200 45px '优设标题黑&#39';
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box:hover>img{
+    width: 100%;
+    height: 100%;
+}
+#a{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    position: fixed; 
+    bottom: 5%;
+}
+#a a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #88bfd5;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+#a a:hover {
+    background-color: #faa1eb;
+}
